@@ -1,0 +1,1 @@
+# Vaihda-kuva-ja-teksti

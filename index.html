@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./layout.css">
+    <title>Document</title>
+</head>
+
+<body class="colorChang">
+    <div class="container">
+        <h1>Mozilla is cool</h1>
+        <img src="./images/firefox-logo.webp" alt="">
+
+        <div class="section-description">
+            <button id="btn">change User</button>
+            <h2>At Mozilla, We're a global commuity of</h2>
+            <ul class="info">
+                <li>tehnologists</li>
+                <li>thinkers</li>
+                <li>builders</li>
+            </ul>
+        </div>
+
+
+
+    </div>
+
+    <script>
+        let btn = document.querySelector('#btn')
+        let h1 = document.querySelector('h1')
+        let img = document.querySelector('img')
+        let showPage = false
+        // for toggle
+        btn.addEventListener('click', function () {
+            if (showPage) {
+                h1.innerHTML = 'Is Brave even Cooler?'
+                document.body.style.backgroundColor = 'white'
+                img.setAttribute('src', './images/brave-logo.png')
+                showPage = false
+            } else {
+                h1.innerHTML = 'Mozilla is cool'
+                document.body.style.backgroundColor = '#ff9500'
+                img.setAttribute('src', './images/firefox-logo.webp')
+                showPage = true
+
+            }
+
+
+        })
+
+
+
+    </script>
+
+</body>
+
+</html>
